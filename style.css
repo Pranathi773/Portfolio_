@@ -82,3 +82,64 @@ body {
     margin-top: 20px;
   }
 }
+/* SECTION */
+.section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.section h2 span {
+  color: #38bdf8;
+}
+
+.subtitle {
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+/* EDUCATION */
+.edu-item {
+  background: #1e293b;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.skill i {
+  font-size: 40px;
+  color: #38bdf8;
+}
+
+/* PROJECT */
+.project-card {
+  background: #1e293b;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* CONTACT */
+.contact-icons i {
+  font-size: 30px;
+  margin: 15px;
+  color: #38bdf8;
+}
