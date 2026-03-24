@@ -208,3 +208,73 @@ footer {
     flex-direction: column;
   }
 }
+/* ===================== */
+/* 🔥 PREMIUM IMPROVEMENTS */
+/* ===================== */
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* HERO IMPROVEMENT */
+.hero-left h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.hero-left p {
+  color: #cbd5f5;
+  font-size: 16px;
+}
+
+.hero-right img {
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+/* GLASS EFFECT */
+.edu-item,
+.project-card {
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* HEADING STYLE */
+.section h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.section h2 span {
+  color: #38bdf8;
+}
+
+/* HOVER EFFECT */
+.edu-item:hover,
+.project-card:hover {
+  transform: translateY(-8px);
+  transition: 0.3s ease;
+}
+
+/* SKILLS GRID IMPROVED */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.skill {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  width: 120px;
+  transition: 0.3s;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  background: #38bdf8;
+  color: black;
+}
