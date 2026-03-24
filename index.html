@@ -1,105 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <head>
   <meta charset="UTF-8" />
-  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pranathi Dasari Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <!-- Animate.css -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
-   <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
-    <title>Pranathi Portfolio</title>
-    <style>
-        body {
-            font-family: Arial;
-            margin: 0;
-            background: #f4f4f4;
-        }
-        header {
-            background: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-            margin: 10px;
-            background: white;
-            border-radius: 10px;
-        }
-        h2 {
-            color: #333;
-        }
-    </style>
 </head>
-
 <body>
-
-<header>
-    <h1>Dasari Pranathi</h1>
-    <p>Full Stack Developer | Machine Learning Enthusiast</p>
-</header>
-
-<section>
-    <h2>About</h2>
-    <p>
-    B.Tech ECE graduate (2025) from MVGR College of Engineering with strong interest
-    in Full Stack Development and Machine Learning.
+  <header>
+    <h1 class="animate__animated animate__fadeInDown">Pranathi Dasari</h1>
+    <p class="subtitle animate__animated animate__fadeInDown animate__delay-1s">
+      B.Tech ECE Graduate | Java Full Stack Developer & ML Enthusiast
     </p>
-</section>
+    <nav class="animate__animated animate__fadeInUp animate__delay-2s">
+      <a href="#about"><i class="fas fa-user"></i> About</a>
+      <a href="#projects"><i class="fas fa-code"></i> Projects</a>
+      <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+  </header>
 
-<section>
-    <h2>Education</h2>
-    <ul>
-        <li>B.Tech (ECE) – MVGR College | CGPA: 8.4</li>
-        <li>Intermediate – NRI Junior College | CGPA: 9.7</li>
-        <li>SSC – APR School | CGPA: 9.8</li>
-    </ul>
-</section>
+  <main>
+    <section id="about" class="card animate__animated animate__fadeInLeft">
+      <h2>About Me</h2>
+      <p>
+        A motivated and technically skilled B.Tech ECE graduate from MVGR College of Engineering. Passionate about Java Full Stack development, machine learning, and building scalable data-driven solutions.
+      </p>
+    </section>
 
-<section>
-    <h2>Skills</h2>
-    <p>Java, HTML, CSS, JavaScript, React, Python, ML, OpenCV, MySQL, Git</p>
-</section>
+    <section id="projects" class="card animate__animated animate__fadeInRight">
+      <h2>Projects</h2>
+      <ul>
+        <li><b>Traffic Accident Severity Prediction</b>: ML model predicting accident severity with XGBoost and hotspot analysis using Folium.</li>
+        <li><b>Fake Currency Detection</b>: Web app using OpenCV and Streamlit to classify banknotes.</li>
+        <li><b>LPC2148 ARM7 Home Automation</b>: Bluetooth-controlled home automation system using ARM7 microcontroller.</li>
+      </ul>
+    </section>
 
-<section>
-    <h2>Projects</h2>
-    <ul>
-        <li><b>Fake Currency Detection:</b> ML + Web app using OpenCV & Streamlit</li>
-        <li><b>Traffic Accident Prediction:</b> ML models with 7.7M dataset</li>
-        <li><b>Home Automation:</b> Bluetooth system using ARM7</li>
-    </ul>
-</section>
+    <section id="contact" class="card animate__animated animate__fadeInUp">
+      <h2>Contact</h2>
+      <p><i class="fas fa-phone"></i> 9346450893</p>
+      <p><i class="fas fa-envelope"></i> pranathidasari07@gmail.com</p>
+      <p>
+        <i class="fab fa-github"></i>
+        <a href="https://github.com/pranathi773" target="_blank" rel="noopener noreferrer">github.com/pranathi773</a>
+      </p>
+      <p>
+        <i class="fab fa-linkedin"></i>
+        <a href="https://linkedin.com/in/pranathi" target="_blank" rel="noopener noreferrer">linkedin.com/in/pranathi</a>
+      </p>
+      <a href="#top" class="button">Back to Top</a>
+    </section>
+  </main>
 
-<section>
-    <h2>Experience</h2>
-    <p>Intern – NIT Warangal (2024)</p>
-</section>
-
-<section>
-    <h2>Certificates</h2>
-    <ul>
-        <li>Cisco C</li>
-        <li>Cisco Python</li>
-        <li>Infosys HTML</li>
-        <li>Embedded Systems & IoT Workshop</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Contact</h2>
-    <p>
-  Email:
-  <i class="fas fa-envelope"></i> pranathidasari07@gmail.com
-</p>
-    <p>
-  GitHub:
-  <a href="https://github.com/pranathi773" target="_blank">
-    <i class="fab fa-github"></i> pranathi773
-  </a>
-</p>
-</section>
-
+  <footer>
+    <p>© 2026 Pranathi Dasari | Built with ❤️ and GitHub Pages</p>
+  </footer>
 </body>
 </html>
