@@ -42,7 +42,8 @@ body {
 }
 
 .hero-left h1 {
-  font-size: 48px;
+  font-size: 45px;
+  margin-bottom: 10px;
 }
 
 .hero-left span {
@@ -51,12 +52,12 @@ body {
 
 .hero-left h3 {
   color: #94a3b8;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 .hero-left p {
   color: #cbd5f5;
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 /* BUTTON */
@@ -87,7 +88,7 @@ body {
   margin-bottom: 10px;
 }
 
-.section span {
+.section h2 span {
   color: #38bdf8;
 }
 
@@ -104,6 +105,11 @@ body {
   max-width: 600px;
   border-radius: 10px;
   text-align: left;
+  transition: 0.3s;
+}
+
+.edu-item:hover {
+  transform: translateY(-5px);
 }
 
 /* SKILLS */
@@ -118,47 +124,62 @@ body {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  transition: 0.3s;
 }
 
 .skill i {
   font-size: 30px;
   color: #38bdf8;
+  margin-bottom: 10px;
 }
 
-/* PROJECTS (2 SIDE BY SIDE) */
+.skill:hover {
+  transform: scale(1.05);
+}
+
+/* PROJECTS */
 .projects-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 
-/* PROJECT CARD */
 .project-card {
   background: #1e293b;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 15px;
   text-align: left;
+  transition: 0.3s;
+  height: 100%;   /* IMPORTANT FIX */
 }
 
-/* IMAGE */
 .project-card img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 200px;       /* IMPORTANT FIX */
+  object-fit: cover;   /* makes equal size */
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
-/* TEXT */
+.project-card h3 {
+  margin: 10px 0;
+}
+
 .project-card p {
   color: #cbd5f5;
+  font-size: 14px;
 }
 
-/* LINK */
 .project-card a {
   display: inline-block;
   margin-top: 10px;
   color: #38bdf8;
   text-decoration: none;
+  font-weight: 600;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
 }
 
 /* CONTACT */
@@ -171,20 +192,21 @@ body {
 .contact-icons i {
   font-size: 30px;
   color: #38bdf8;
+  transition: 0.3s;
+}
+
+.contact-icons i:hover {
+  transform: scale(1.2);
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
+  .projects-container,
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 
   .hero {
     flex-direction: column;
-  }
-
-  .projects-container {
-    grid-template-columns: 1fr;
-  }
-
-  .skills-grid {
-    grid-template-columns: 1fr;
   }
 }
