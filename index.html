@@ -2,70 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pranathi Dasari Portfolio</title>
-
+  
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
-
+  
   <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
   <!-- Animate.css -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Header / Hero Section -->
   <header>
-    <h1 class="animate__animated animate__fadeInDown">Pranathi Dasari</h1>
-    <p class="subtitle animate__animated animate__fadeInDown animate__delay-1s">
-      B.Tech ECE Graduate | Java Full Stack Developer & ML Enthusiast
-    </p>
-    <nav class="animate__animated animate__fadeInUp animate__delay-2s">
-      <a href="#about"><i class="fas fa-user"></i> About</a>
-      <a href="#projects"><i class="fas fa-code"></i> Projects</a>
-      <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
-    </nav>
+    <div class="social-links">
+      <a href="mailto:pranathidasari07@gmail.com"><i class="fas fa-envelope"></i> Gmail</a>
+      <a href="https://github.com/pranathi773" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://linkedin.com/in/pranathi" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="Pranathi_Resume.pdf" target="_blank"><i class="fas fa-file"></i> Resume</a>
+    </div>
+    <div class="intro">
+      <h1>Hello, I'm Pranathi</h1>
+      <p>I'm a B.Tech ECE graduate from MVGR College of Engineering, passionate about Java Full Stack development, Machine Learning, and data-driven solutions. I enjoy building projects that solve real-world problems. Feel free to connect!</p>
+      <img src="profile.jpg" alt="Pranathi Dasari" class="profile-img" />
+    </div>
   </header>
 
   <main>
-    <section id="about" class="card animate__animated animate__fadeInLeft">
-      <h2>About Me</h2>
-      <p>
-        A motivated and technically skilled B.Tech ECE graduate from MVGR College of Engineering. Passionate about Java Full Stack development, machine learning, and building scalable data-driven solutions.
-      </p>
+    <!-- Education Section -->
+    <section id="education" class="card animate__animated animate__fadeInLeft">
+      <h2>My Education</h2>
+      <div class="edu-item">
+        <h3>MVGR College of Engineering</h3>
+        <p>B.Tech in Electronics & Communication Engineering | 2021–2025 | CGPA: 8.4</p>
+      </div>
+      <div class="edu-item">
+        <h3>NRI Junior College</h3>
+        <p>Intermediate in MPC Stream | 2019–2021 | CGPA: 9.7</p>
+      </div>
+      <div class="edu-item">
+        <h3>APR School</h3>
+        <p>Secondary Education | 2019 | CGPA: 9.8</p>
+      </div>
     </section>
 
-    <section id="projects" class="card animate__animated animate__fadeInRight">
-      <h2>Projects</h2>
-      <ul>
-        <li><b>Traffic Accident Severity Prediction</b>: ML model predicting accident severity with XGBoost and hotspot analysis using Folium.</li>
-        <li><b>Fake Currency Detection</b>: Web app using OpenCV and Streamlit to classify banknotes.</li>
-        <li><b>LPC2148 ARM7 Home Automation</b>: Bluetooth-controlled home automation system using ARM7 microcontroller.</li>
-      </ul>
+    <!-- Skills Section -->
+    <section id="skills" class="card animate__animated animate__fadeInRight">
+      <h2>Professional Skillset</h2>
+      <div class="skills-container">
+        <span class="skill">Java</span>
+        <span class="skill">C</span>
+        <span class="skill">Python</span>
+        <span class="skill">MySQL</span>
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">React.js</span>
+        <span class="skill">Machine Learning</span>
+      </div>
     </section>
 
-    <section id="contact" class="card animate__animated animate__fadeInUp">
-      <h2>Contact</h2>
-      <p><i class="fas fa-phone"></i> 9346450893</p>
-      <p><i class="fas fa-envelope"></i> pranathidasari07@gmail.com</p>
-      <p>
-        <i class="fab fa-github"></i>
-        <a href="https://github.com/pranathi773" target="_blank" rel="noopener noreferrer">github.com/pranathi773</a>
-      </p>
-      <p>
-        <i class="fab fa-linkedin"></i>
-        <a href="https://linkedin.com/in/pranathi" target="_blank" rel="noopener noreferrer">linkedin.com/in/pranathi</a>
-      </p>
-      <a href="#top" class="button">Back to Top</a>
+    <!-- Projects Section -->
+    <section id="projects" class="card animate__animated animate__fadeInUp">
+      <h2>My Recent Works</h2>
+      
+      <div class="project">
+        <h3>Traffic Accident Severity Prediction</h3>
+        <p>Machine learning model to predict accident severity with Random Forest, SVM, and XGBoost. Hotspot analysis with Folium to identify high-risk areas.</p>
+        <a href="https://github.com/pranathi773" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>Fake Currency Detection</h3>
+        <p>Web app using OpenCV and Streamlit to classify banknotes as real or counterfeit. Achieved 99% model accuracy.</p>
+        <a href="https://github.com/pranathi773" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>LPC2148 ARM7 Home Automation</h3>
+        <p>Bluetooth-controlled home automation system using ARM7 microcontroller and mobile app interface.</p>
+        <a href="https://github.com/pranathi773" target="_blank">View on GitHub</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="card animate__animated animate__fadeInLeft">
+      <h2>Let's Connect</h2>
+      <p>Email: pranathidasari07@gmail.com</p>
+      <p>GitHub: <a href="https://github.com/pranathi773" target="_blank">github.com/pranathi773</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/pranathi" target="_blank">linkedin.com/in/pranathi</a></p>
     </section>
   </main>
 
