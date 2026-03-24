@@ -1,11 +1,9 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BODY */
 body {
   font-family: 'Poppins', sans-serif;
   background: #0f172a;
@@ -16,7 +14,6 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 15px 10%;
   background: #020617;
 }
@@ -27,18 +24,22 @@ nav a {
   text-decoration: none;
 }
 
-/* HERO SECTION */
+/* HERO */
 header {
   display: flex;
-  justify-content: center;   /* CENTER FIX */
+  justify-content: center;
   align-items: center;
   gap: 50px;
   padding: 60px 10%;
-  flex-wrap: wrap;           /* RESPONSIVE FIX */
+  flex-wrap: wrap;
 }
 
 .hero-text {
   max-width: 500px;
+}
+
+.hero-text span {
+  color: #38bdf8;
 }
 
 .profile-img {
@@ -47,7 +48,7 @@ header {
   border: 4px solid #38bdf8;
 }
 
-/* BUTTONS */
+/* BUTTON */
 .btn {
   display: inline-block;
   margin-top: 15px;
@@ -58,10 +59,16 @@ header {
   border-radius: 5px;
 }
 
-/* SECTION GENERAL */
+/* SOCIAL */
+.social-icons i {
+  font-size: 20px;
+  margin: 10px;
+}
+
+/* SECTION */
 .section {
-  max-width: 1000px;         /* CENTER CONTENT */
-  margin: auto;              /* IMPORTANT */
+  max-width: 1000px;
+  margin: auto;
   padding: 60px 20px;
   text-align: center;
 }
@@ -69,8 +76,8 @@ header {
 /* SKILLS */
 .skills {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 15px;
 }
 
@@ -79,7 +86,16 @@ header {
   padding: 15px 20px;
   border-radius: 10px;
   min-width: 120px;
-  text-align: center;
+}
+
+/* EDUCATION */
+.edu-card {
+  background: #1e293b;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: left;
 }
 
 /* PROJECTS */
@@ -107,7 +123,7 @@ footer {
   background: #020617;
 }
 
-/* 🔥 MOBILE FIX */
+/* MOBILE */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
