@@ -73,6 +73,16 @@ header {
   text-align: center;
 }
 
+/* EDUCATION */
+.edu-card {
+  background: #1e293b;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: left;
+}
+
 /* SKILLS */
 .skills {
   display: flex;
@@ -85,20 +95,9 @@ header {
   background: #1e293b;
   padding: 15px 20px;
   border-radius: 10px;
-  min-width: 120px;
 }
 
-/* EDUCATION */
-.edu-card {
-  background: #1e293b;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 600px;
-  text-align: left;
-}
-
-/* PROJECTS */
+/* PROJECT */
 .project-card {
   background: #1e293b;
   margin: 20px auto;
