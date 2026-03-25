@@ -209,3 +209,42 @@ html {
 .resume-text a:hover {
   text-decoration: underline;
 }
+/* HERO TEXT STYLING */
+.hello {
+  font-size: 22px;
+  color: #94a3b8;
+  margin-bottom: 5px;
+}
+
+.name {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.name span {
+  color: #38bdf8;
+}
+
+.description {
+  font-size: 15px;
+  color: #cbd5f5;
+  line-height: 1.6;
+  max-width: 480px;
+}
+
+/* RESUME LINK */
+.resume-line {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.resume-line a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.resume-line a:hover {
+  text-decoration: underline;
+}
