@@ -248,3 +248,15 @@ html {
 .resume-line a:hover {
   text-decoration: underline;
 }
+/* TEXT + IMAGE SIDE BY SIDE */
+.about-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* SMALL SIDE IMAGE */
+.about-img {
+  width: 120px;
+  height: auto;
+}
