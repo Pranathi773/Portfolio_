@@ -51,9 +51,8 @@ body {
   height: 380px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  border: none;
 }
-
 /* HELLO */
 .hello {
   font-size: 22px;
