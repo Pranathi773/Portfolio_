@@ -38,13 +38,57 @@ body {
   max-width: 500px;
 }
 
+/* ✅ NEW HERO TEXT STYLING */
+.hero-left h1 {
+  font-size: 28px;
+  color: #94a3b8;
+}
+
+.hero-left h2 {
+  font-size: 42px;
+  margin: 10px 0;
+}
+
 .hero-left span {
   color: #38bdf8;
 }
 
+.hero-left p {
+  margin: 15px 0;
+  color: #cbd5f5;
+  line-height: 1.6;
+}
+
+/* ✅ CONTACT INFO */
+.hero-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* ✅ LINKS (GitHub, LinkedIn, Resume) */
+.hero-links {
+  margin-top: 20px;
+}
+
+.hero-links a {
+  margin-right: 15px;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero-links a:hover {
+  text-decoration: underline;
+}
+
+/* ✅ IMAGE (make it like circle profile) */
 .hero-right img {
-  width: 350px;
-  border-radius: 20px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
 }
 
 /* BUTTON */
@@ -114,6 +158,16 @@ body {
   border-radius: 10px;
 }
 
+/* ✅ PROJECT LINK BLUE */
+.project-card a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
 /* CONTACT */
 .contact-icons {
   display: flex;
@@ -132,11 +186,12 @@ body {
   .skills-grid {
     grid-template-columns: 1fr;
   }
- 
+
   .hero {
     flex-direction: column;
   }
 }
+
 html {
   scroll-behavior: smooth;
 }
