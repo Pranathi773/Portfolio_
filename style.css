@@ -35,54 +35,68 @@ body {
 }
 
 .hero-left {
-  max-width: 500px;
+  max-width: 650px; /* FIXED WIDTH */
 }
 
-/* ✅ NEW HERO TEXT STYLING */
-.hero-left h1 {
-  font-size: 28px;
-  color: #94a3b8;
+/* HELLO */
+.hello {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 5px;
 }
 
-.hero-left h2 {
-  font-size: 42px;
-  margin: 10px 0;
+/* NAME */
+.name {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
-.hero-left span {
+.name span {
   color: #38bdf8;
 }
 
-.hero-left p {
-  margin: 15px 0;
+/* TEXT + IMAGE SIDE BY SIDE */
+.about-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap; /* PREVENT DOWN */
+}
+
+/* DESCRIPTION */
+.description {
+  flex: 1;
+  font-size: 15px;
   color: #cbd5f5;
   line-height: 1.6;
 }
 
-/* ✅ CONTACT INFO */
-.hero-info p {
-  margin: 5px 0;
+/* SMALL IMAGE BESIDE TEXT */
+.about-img {
+  width: 120px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+/* RESUME LINK */
+.resume-line {
+  margin-top: 10px;
   font-size: 14px;
   color: #94a3b8;
 }
 
-/* ✅ LINKS (GitHub, LinkedIn, Resume) */
-.hero-links {
-  margin-top: 20px;
-}
-
-.hero-links a {
-  margin-right: 15px;
+.resume-line a {
   color: #38bdf8;
   text-decoration: none;
-  font-weight: 500;
 }
 
-.hero-links a:hover {
+.resume-line a:hover {
   text-decoration: underline;
 }
 
-/* ✅ IMAGE (make it like circle profile) */
+/* PROFILE IMAGE RIGHT */
 .hero-right img {
   width: 300px;
   height: 300px;
@@ -91,7 +105,7 @@ body {
   border: 4px solid #38bdf8;
 }
 
-/* BUTTON */
+/* BUTTON (unused but kept) */
 .btn {
   padding: 12px 20px;
   background: #38bdf8;
@@ -158,7 +172,6 @@ body {
   border-radius: 10px;
 }
 
-/* ✅ PROJECT LINK BLUE */
 .project-card a {
   color: #38bdf8;
   text-decoration: none;
@@ -190,73 +203,13 @@ body {
   .hero {
     flex-direction: column;
   }
+
+  .about-row {
+    flex-direction: column; /* stack on mobile */
+  }
 }
 
+/* SMOOTH SCROLL */
 html {
   scroll-behavior: smooth;
-}
-.resume-text {
-  margin-top: 15px;
-  color: #94a3b8;
-  font-size: 14px;
-}
-
-.resume-text a {
-  color: white;
-  text-decoration: none;
-}
-
-.resume-text a:hover {
-  text-decoration: underline;
-}
-/* HERO TEXT STYLING */
-.hello {
-  font-size: 22px;
-  color: white;
-  margin-bottom: 5px;
-}
-
-.name {
-  font-size: 48px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-.name span {
-  color: #38bdf8;
-}
-
-.description {
-  font-size: 15px;
-  color: #cbd5f5;
-  line-height: 1.6;
-  max-width: 480px;
-}
-
-/* RESUME LINK */
-.resume-line {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #94a3b8;
-}
-
-.resume-line a {
-  color: #38bdf8;
-  text-decoration: none;
-}
-
-.resume-line a:hover {
-  text-decoration: underline;
-}
-/* TEXT + IMAGE SIDE BY SIDE */
-.about-row {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-/* SMALL SIDE IMAGE */
-.about-img {
-  width: 120px;
-  height: auto;
 }
