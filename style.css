@@ -195,3 +195,29 @@ body {
 html {
   scroll-behavior: smooth;
 }
+/* CONTACT SECTION STYLE */
+.contact-subtext {
+  margin-top: 10px;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.contact-details {
+  margin-top: 20px;
+  display: inline-block;
+  text-align: left;
+}
+
+.contact-details p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #cbd5f5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-details i {
+  color: #38bdf8;
+  font-size: 18px;
+}
