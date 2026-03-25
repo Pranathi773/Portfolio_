@@ -132,7 +132,7 @@ body {
   .skills-grid {
     grid-template-columns: 1fr;
   }
-
+ 
   .hero {
     flex-direction: column;
   }
